@@ -41,6 +41,7 @@ optional arguments:
 - [nop-hider idapython script](https://gist.github.com/JusticeRage/795badf81fe59454963a06070d132b06)  
     This script hides the nop instructions from IDA graph view as the backbone is converted into a long nop chain after deobfuscation.  
 - [qiling ida plugin](https://github.com/qilingframework/qiling/blob/master/qiling/extensions/idaplugin/qilingida.py)
+    
     Obfuscation is a most common software protection technique to deliberately make the source or machine code hard to understand. Thanks to the IDA powerful CFG API, Qiling IDA plugin can implement multiple de-obfuscation techniques with a mixture of static and dynamic analysis.
 
 
