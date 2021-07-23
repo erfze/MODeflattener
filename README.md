@@ -17,7 +17,7 @@ pip3 install -r requirements.txt
 ## Usage
 ```
 └──╼ $python3 modeflattener.py -h
-usage: modeflattener [-h] [-a] [-l LOG] filename patch_filename address
+usage: modeflattener [-h] [-b BASEADDR] [-a] [-l LOG] filename patch_filename address
 
 positional arguments:
   filename           file to deobfuscate
@@ -25,9 +25,11 @@ positional arguments:
   address            obfuscated function address
 
 optional arguments:
-  -h, --help         show this help message and exit
-  -a, --all          find functions recursively and deobfuscate if flattened
-  -l LOG, --log LOG  logging level (default=INFO)
+  -h, --help            show this help message and exit
+  -b BASEADDR, --baseaddr BASEADDR
+                        file base address
+  -a, --all             find and deobfuscate all flattened functions recursively
+  -l LOG, --log LOG     logging level (default=INFO)
 ```
 
 ### Supported Architectures
